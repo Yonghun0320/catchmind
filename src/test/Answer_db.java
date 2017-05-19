@@ -11,7 +11,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.io.*;
- 
+import java.io.sql;
    
 public class Answer_db {
     BufferedReader br = null;
@@ -53,19 +53,19 @@ public class Answer_db {
             if(fr!=null)fr.close();
       } catch (FileNotFoundException e) {
          // TODO Auto-generated catch block
-         System.out.println("ÆÄÀÏÃ£À»¼ö¾øÀ½");
+         System.out.println("íŒŒì¼ì°¾ì„ìˆ˜ì—†ìŒ");
          e.printStackTrace();
       } catch (ClassNotFoundException e) {
          // TODO Auto-generated catch block
-         System.out.println("Å¬·¡½º Ã£À»¼ö¾øÀ½");
+         System.out.println("í´ë˜ìŠ¤ ì°¾ì„ìˆ˜ì—†ìŒ");
          e.printStackTrace();
       } catch (SQLException e) {
          // TODO Auto-generated catch block
-         System.out.println("sql¿À·ù");
+         System.out.println("sqlì˜¤ë¥˜");
          e.printStackTrace();
       } catch (IOException e) {
          // TODO Auto-generated catch block
-         System.out.println("ÆÄÀÏ ÀÔÃâ·Â ¿À·ù");
+         System.out.println("íŒŒì¼ ì…ì¶œë ¥ ì˜¤ë¥˜");
          e.printStackTrace();
       }    
         finally{
